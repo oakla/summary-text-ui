@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .chunk {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chunk">
+    <p>Chunk 1</p>
+    <button onclick="toggleChunk(this)">Toggle</button>
+  </div>
+  <div class="chunk">
+    <p>Chunk 2</p>
+    <button onclick="toggleChunk(this)">Toggle</button>
+  </div>
+  <div class="chunk">
+    <p>Chunk 3</p>
+    <button onclick="toggleChunk(this)">Toggle</button>
+  </div>
+
+  <script>
+    function toggleChunk(button) {
+      var chunk = button.parentNode;
+      var paragraph = chunk.querySelector('p');
+      
+      if (paragraph.style.display === 'none') {
+        paragraph.style.display = 'block';
+      } else {
+        paragraph.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

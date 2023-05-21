@@ -3,9 +3,8 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "$package_name"
+name = "mksum"
 version = "0.0.1"
 dependencies = [
-    "requests",
-    'importlib-metadata; python_version<"3.8"',
+    "importlib-resources",
 ]

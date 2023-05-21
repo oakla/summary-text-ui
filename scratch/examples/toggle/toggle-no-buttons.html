@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Toggle</title>
+  <style>
+    .visible {
+      display: block;
+    }
+    
+    .greyed-out {
+      color: #999999;
+    }
+    
+    .invisible {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div onclick="toggleState(this)">
+    <p class="visible">Text 1</p>
+  </div>
+  <div onclick="toggleState(this)">
+    <p class="visible">Text 2</p>
+  </div>
+  <div onclick="toggleState(this)">
+    <p class="visible">Text 3</p>
+  </div>
+
+  <script>
+    function toggleState(container) {
+      var text = container.querySelector('p');
+      if (text.classList.contains('visible')) {
+        text.classList.remove('visible');
+        text.classList.add('greyed-out');
+      } else if (text.classList.contains('greyed-out')) {
+        text.classList.remove('greyed-out');
+        text.classList.add('invisible');
+      } else {
+        text.classList.remove('invisible');
+        text.classList.add('visible');
+      }
+    }
+  </script>
+</body>
+</html>
