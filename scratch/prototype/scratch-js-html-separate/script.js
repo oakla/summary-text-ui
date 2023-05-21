@@ -12,6 +12,7 @@ function getSelectedElements() {
   return selectedElements;
 }
 
+
 function buildTriggeringActivity() {
   var triggerText = document.getElementById("triggerText");
   var selectedElements = getSelectedElements();

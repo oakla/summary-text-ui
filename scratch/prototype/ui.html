@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Summary</title>
   <link rel="stylesheet" href="style.css">
   <style>
     .visible {
@@ -13,68 +14,39 @@
   </style>
 </head>
 <body>
-  <button onclick="copyVisibleText()">Copy to clipboard</button>
-
-  <div id="personal" class="basic visible"><p>Customer Profile: $title $first_name $last_name, DOB: $dob ($age_in_years years old)
+  <h1>Summary</h1>
+  <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
+  
+  <div id="personal" class="container basic">
+    <p class="visible">Customer Profile: $title $first_name $last_name, DOB: $dob ($age_in_years years old)
 
   </p></div>
   
-  <div id="customer-background" class="basic visible"><p>$last_name was on-boarded in $onboard_month $onboard_year and $occupation_status. No previous SMRs, world check or adverse news identified at the time of assessment.
+  <div id="customer-background" class="container basic">
+    <p class="visible">$last_name was on-boarded in $onboard_month $onboard_year and $occupation_status. No previous SMRs, world check or adverse news identified at the time of assessment.
 
-  </p></div>
+    </p></div>
 
-  <div id="account" class="basic visible"><p>Customer Account: Alert triggered on $last_name's $account_product_type account $account_number
-
-
-  </p></div>
+  <div id="account" class="container basic">
+    <p class="visible">Customer Account: Alert triggered on $last_name's $account_product_type account $account_number
+      
+    </p></div>
+    
+    <div id="triggering-activity" class="container basic">
+      <p class="visible">Triggering activity: Alert triggered on $last_name's $account_product_type account $account_number
+        
+      </p></div>
   
-  <div id="triggering-activity" class="basic visible"><p>Triggering activity: Alert triggered on $last_name's $account_product_type account $account_number
+  <button id="button2" onclick="toggleButton(this)" class="selected">velocity</button>
+  <button id="button1" onclick="toggleButton(this)">early redemption</button>
+  <!-- <button id="button3" onclick="toggleButton(this)">Button 3</button> -->
 
+  <h2>Selected Elements:</h2>
+  <p id="triggerText">Triggering activity: velocity</p>
+  
+  <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
+  
+  <script src="script.js"></script>
 
-  </p></div>
-
-
-  <div class="component">
-    <p>Block 1</p>
-    <button onclick="toggleBlock(this)">Toggle</button>
-  </div>
-  <div class="component">
-    <p>Chunk 2</p>
-    <button onclick="toggleBlock(this)">Toggle</button>
-  </div>
-  <div class="component">
-    <p>Chunk 3</p>
-    <button onclick="toggleBlock(this)">Toggle</button>
-  </div>
-
-  <script>
-    function toggleBlock(button) {
-      var text = button.previousElementSibling;
-      if (text.classList.contains('visible')) {
-        text.classList.remove('visible');
-        text.classList.add('greyed-out');
-      } else if (text.classList.contains('greyed-out')) {
-        text.classList.remove('greyed-out');
-        text.classList.add('visible');
-      }
-    }
-
-    function copyVisibleText() {
-      var visibleText = document.querySelectorAll('.visible');
-      var textToCopy = "";
-      
-      visibleText.forEach(function(textElement) {
-        textToCopy += textElement.textContent + "\n";
-      });
-      
-      if (textToCopy.length > 0) {
-        navigator.clipboard.writeText(textToCopy).then(function() {
-          console.log('Visible text copied to clipboard.');
-        }).catch(function(error) {
-          console.error('Unable to copy visible text: ', error);
-        });
-      }
-    }
-  </script>
 </body>
 </html>
