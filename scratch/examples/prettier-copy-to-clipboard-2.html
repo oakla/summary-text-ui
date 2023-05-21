@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Toggle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
+    
+    .container {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .container:hover {
+      background-color: #f1f1f1;
+    }
+    
+    .visible {
+      display: block;
+      color: #333333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .greyed-out {
+      color: #999999;
+      font-weight: normal;
+      transition: color 0.3s ease;
+    }
+    
+    .invisible {
+      display: none;
+    }
+    
+    .copy-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .copy-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text Toggle</h1>
+  
+  <div class="container" onclick="toggleState(this)">
+    <p class="visible">Text 1</p>
+  </div>
+  <div class="container" onclick="toggleState(this)">
+    <p class="visible">Text 2</p>
+  </div>
+  <div class="container" onclick="toggleState(this)">
+    <p class="visible">Text 3</p>
+  </div>
+
+  <button class="copy-button" onclick="copyVisibleText()">Copy Visible Text</button>
+
+  <script>
+    function toggleState(container) {
+      var text = container.querySelector('p');
+      if (text.classList.contains('visible')) {
+        text.classList.remove('visible');
+        text.classList.add('greyed-out');
+      } else if (text.classList.contains('greyed-out')) {
+        text.classList.remove('greyed-out');
+        text.classList.add('invisible');
+      } else {
+        text.classList.remove('invisible');
+        text.classList.add('visible');
+      }
+    }
+    
+    function copyVisibleText() {
+      var visibleText = document.querySelectorAll('.visible');
+      var textToCopy = "";
+      
+      visibleText.forEach(function(textElement) {
+        textToCopy += textElement.textContent + "\n";
+      });
+      
+      if (textToCopy.length > 0) {
+        navigator.clipboard.writeText(textToCopy).then(function() {
+          console.log('Visible text copied to clipboard.');
+        }).catch(function(error) {
+          console.error('Unable to copy visible text: ', error);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
