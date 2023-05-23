@@ -1,0 +1,17 @@
+Customer Profile: $alerting_name, zzz999: $dob ($years_old years)
+
+XAXXXX was on-boarded in August #### and is a retired. No previous s0m0r0s, world check or adverse news identified at the time of assessment.
+
+Customer account: Alert triggered on XXXXXXX's FirstChoice Wholesale Super account ######-#########
+
+Triggering activity: early redemption
+
+A review of XAXXXX's FirstChoice Wholesale Super account ######-######### shows:
+
+-## August #### a personal contribution in the amount of $###,### was credited from Bendigo Bank, bank account ###### ######### held in name of X XAXXXX
+-## August #### a rollover credit in the amount of $##,###.## was received from external fund "XXXXA XXXXX XXXX"
+-# September #### a rollover credit in the amount of $###,###.## was received from external fund "XXXXAXX XXXAXXXXX AXXXXAXXX XXXXXXXX"
+
+- # September ####, super account was closed where the balance of funds $###,###.## were rolled over to establish a FirstChoice Wholesale Pension account ###-###-#########. Funds remain in the account at the time of reporting.
+
+Summary: Activity is in-line and consistent with the member profile. Funds were moved from super to pension, XAXXXX is eligible to commence a pension account. Funds were sourced from a personal contribution/ rollover contribution and transferred to establish a pension account, funds remain in the account. Activity is in-line and consistent with the member profile and deemed not unusual. No adverse news, no red flags, no unusual activities identified.

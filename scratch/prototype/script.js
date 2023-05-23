@@ -49,3 +49,31 @@ function toggleButton(button) {
     buildTriggeringActivity();
 }
 
+function copyVisibleText() {
+  var visibleText = document.querySelectorAll('.visible');
+  var textToCopy = "";
+  
+  visibleText.forEach(function(textElement) {
+    textToCopy += textElement.textContent + "\n";
+  });
+  
+  if (textToCopy.length > 0) {
+    navigator.clipboard.writeText(textToCopy).then(function() {
+      showCopyFeedback();
+      console.log('Visible text copied to clipboard.');
+    }).catch(function(error) {
+      console.error('Unable to copy visible text: ', error);
+    });
+  }
+}
+
+function showCopyFeedback() {
+  // var copyFeedback = document.getElementById('copyFeedback');
+  var copyFeedbacks = document.querySelector('.copy-feedback');
+  copyFeedbacks.forEach(function(copyFeedback) {
+    copyFeedback.classList.add('show');
+    setTimeout(function() {
+      copyFeedback.classList.remove('show');
+    }, 2000);
+  });
+}

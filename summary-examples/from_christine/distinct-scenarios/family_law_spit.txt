@@ -1,0 +1,16 @@
+Customer Profile: $alerting_name, zzz999: $dob ($years_old years)
+
+XAXXXX-XAXX was on-boarded in June #### and occupation is unknown. No previous s0m0r0s, world check or adverse news identified at the time of assessment.
+
+
+Customer Account: Alert triggered on XAXXXX-XAXX's FirstChoice Wholesale Super account ###############
+
+
+Triggering activity: Early redemption and velocity
+
+A review of XAXXXX-XAXX's FirstChoice Wholesale Super account ############### shows :
+- ## June #### a deposit of $##,### was credited from an internal FirstChoice Wholesale Super account ############### held by "XAXX XAXXXX-XAXX" which was ultimately sourced by personal contributions, employer contribution and rollover contribution from XXXXXXAX XXXXAX XXXX , since ####.
+
+XAXXXX-XAXX super account was closed on ## July ####, where balance of funds $##,###.## were transferred to external super fund "AustralianSuper" (XXX: XXA####AX) , member account: ##########.
+
+Summary: XAXXXX-XAXX is in a process of a family law settlement. Funds were sourced from an internal super account and transferred external super fund. Activity is in-line and consistent with the member profile and deemed not unusual. No adverse news, no red flags, no unusual activities identified.

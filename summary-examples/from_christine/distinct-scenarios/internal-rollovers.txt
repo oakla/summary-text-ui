@@ -1,0 +1,14 @@
+Customer Profile: $alerting_name, zzz999: $dob ($years_old years)
+
+XXXXX was on-boarded in May #### and is retired. No previous s0m0r0s, world check or adverse news identified at the time of assessment.
+
+Customer account: Alert triggered on XXXXX's FirstChoice Wholesale Super account  ######-#########
+
+Triggering activity: early redemption 
+ 
+A review of XXXXX's FirstChoice Wholesale Super account ######-######### shows:
+-# September #### a personal contribution of $###,### was received from internal FirstChoice XX Pension account ###-###-######### held by XXXXX. Funds ultimately sourced by rollover contribution from XXXX 'X & X XXXXX XXXXXXXXX', since ####.
+
+The super account was closed on # September #### where the balance of funds $###,###.## were rolled over to establish a FirstChoice Wholesale Pension account ###-###-#########. At the time of reporting, funds remain in the pension account.
+
+Summary: Activity is in-line and consistent with the member profile. Alert triggered on early redemption funds were moved from super to pension, XXXXX is eligible to commence a pension account. Funds ultimately were sourced from internal rollover and ultimately transferred to establish a new pension account for a pension refresh, funds remain in the account. Activity is in-line and consistent with the member profile and deemed not unusual. No adverse news, no red flags, no unusual activities identified.

@@ -1,0 +1,16 @@
+Customer Profile: $alerting_name, zzz999: $dob ($years_old years)
+
+$last_name was on-boarded in $onboard_month $onboard_year and $occupation_status. No previous s0m0r0s, world check or adverse news identified at the time of assessment.
+
+Customer Account: Alert triggered on $last_name's $account_product_type account $account_number
+
+Triggering activity: Velocity
+
+A review of $last_name's FirstChoice Wholesale Super account ######-######### reveals:
+- ## June #### a cash-out recontribution strategy was conducted, involving a withdrawal of $###,###.## to the internal super-secret-super-company bank account ############## held in name of XX XX XXXXX
+- ## June #### $###,###.## was then recontributed back into the super account from the same super-secret-super-company bank account ############## held in name of XX XX XXXXX
+
+Funds were ultimately sourced from rollover contribution from XXXX XXXXXXXX XXXXXXXXX XXXXXXXX and XXXXXXX XXXXXXXX XXXXX & XXXXXXAX XXXXX.
+
+Summary: XXXXXXX has met condition of release, he is of eligible age to withdraw funds from the super account and is able to recontribute funds back into super, funds remain in the account . Activity is in-line and consistent with the member profile and deemed not unusual. No adverse news, no red flags, no unusual activities identified.
+

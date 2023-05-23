@@ -1,0 +1,15 @@
+Customer Profile: $alerting_name, zzz999: $dob ($years_old years)
+
+XXXXXAX was on-boarded in February #### and is Retired. No previous s0m0r0s, world check or adverse news identified at the time of assessment.
+
+Customer account: Alert triggered on XXXXXAX's FirstChoice Wholesale Super account ######-#########
+
+Triggering activity: early redemption
+
+A review of XXXXXAX's FirstChoice Wholesale Super account ######-######### shows:
+
+-## August #### a personal contribution in the amount of $###,### was credited from XXXXXAX, bank account ###### ###### held in name of X X XXXXXAX
+
+- ## August ####, contribution return debit $###,###.## to the internal super-secret-super-company account ###-### ######## held in name of XXXXXXXXXX
+
+Summary: The initial credit had a direct debit dishonour in which super-secret-super-company was not able to draw those funds from XXXXXAX's bank account successfully. As a result of this dishonour, the units of the rejected funds subsequently had to be withdrawn back to the super-secret-super-company internal rejections clearing account. Activity is in-line with business processes in relation to direct debit dishonours. No adverse news, no red flags, no unusual activities identified.

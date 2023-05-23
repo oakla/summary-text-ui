@@ -6,8 +6,11 @@
 </head>
 <body>
   <h1>Summary</h1>
-  <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
-  
+  <div>
+    <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
+    <p class="copy-feedback" id="copyFeedback">Text copied!</p>
+  </div>
+  <script src="script.js"></script>
   <div class="triggerSelectors">
     <button id="button2" onclick="toggleButton(this)" class="selected">velocity</button>
     <button id="button1" onclick="toggleButton(this)">early redemption</button>
@@ -25,10 +28,10 @@
     </div>
   
 
-  <h2>Selected Elements:</h2>
-  
-  <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
-  
+  <div>
+    <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
+    <p class="copy-feedback" id="copyFeedback">Text copied!</p>
+  </div>
   <script src="script.js"></script>
 
 </body>
