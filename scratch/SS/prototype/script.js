@@ -49,30 +49,31 @@ function toggleButton(button) {
     buildTriggeringActivity();
 }
 
-function copyFreeText() {
-  /* Get the text area */
-  var textarea = document.getElementById("output-text");
-
-  /* Select the text */
-  textarea.select();
-  textarea.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text to the clipboard */
-  // document.execCommand("copy");
-  navigator.clipboard.writeText(textarea.value).then(function() {
-    showCopyFeedback();
+function copyVisibleText() {
+  var visibleText = document.querySelectorAll('.visible');
+  var textToCopy = "";
+  
+  visibleText.forEach(function(textElement) {
+    textToCopy += textElement.textContent + "\n";
   });
+  
+  if (textToCopy.length > 0) {
+    navigator.clipboard.writeText(textToCopy).then(function() {
+      showCopyFeedback();
+      console.log('Visible text copied to clipboard.');
+    }).catch(function(error) {
+      console.error('Unable to copy visible text: ', error);
+    });
+  }
 }
 
 function showCopyFeedback() {
   // var copyFeedback = document.getElementById('copyFeedback');
-  var copyFeedbackElements = document.querySelectorAll('.copy__confirmation-message');
-  copyFeedbackElements.forEach(function(copyFeedback) {
+  var copyFeedbacks = document.querySelector('.copy-feedback');
+  copyFeedbacks.forEach(function(copyFeedback) {
     copyFeedback.classList.add('show');
     setTimeout(function() {
       copyFeedback.classList.remove('show');
     }, 2000);
   });
 }
-
-

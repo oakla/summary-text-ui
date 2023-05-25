@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Summary</h1>
+  <div>
+    <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
+    <p class="copy-feedback" id="copyFeedback">Text copied!</p>
+  </div>
+  <script src="script.js"></script>
+  <div class="triggerSelectors">
+    <button id="button2" onclick="toggleButton(this)" class="selected">velocity</button>
+    <button id="button1" onclick="toggleButton(this)">early redemption</button>
+  </div>
+  <!-- <button id="button3" onclick="toggleButton(this)">Button 3</button> -->
+  
+  <div class="container basic">
+    <p id="personal" class="visible">Customer Profile: $title $first_name $last_name, DOB: $dob ($age_in_years years old)
+      </p>
+    <p id="customer-background" class="visible">$last_name was on-boarded in $onboard_month $onboard_year and $occupation_status. No previous SMRs, world check or adverse news identified at the time of assessment.
+      </p>
+    <p id="account" class="visible">Customer Account: Alert triggered on $last_name's $account_product_type account $account_number          
+      </p>
+    <p id="triggerText">Triggering activity: velocity</p>
+    </div>
+  
+
+  <div>
+    <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
+    <p class="copy-feedback" id="copyFeedback">Text copied!</p>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
