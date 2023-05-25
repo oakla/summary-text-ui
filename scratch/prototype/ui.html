@@ -6,17 +6,17 @@
 </head>
 <body>
   <h1>Summary</h1>
-  <div>
-    <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
-    <p class="copy-feedback" id="copyFeedback">Text copied!</p>
+  <div class="copy">
+    <button class="copy__button" onclick="copyFreeText()">Copy to clipboard</button>
+    <div class="copy__confirmation-message">Text copied!</div>
   </div>
   <script src="script.js"></script>
   <div class="triggerSelectors">
     <button id="button2" onclick="toggleButton(this)" class="selected">velocity</button>
     <button id="button1" onclick="toggleButton(this)">early redemption</button>
   </div>
-  <!-- <button id="button3" onclick="toggleButton(this)">Button 3</button> -->
   
+  <textarea id="output-text" rows="25" cols="75"></textarea>
   <div class="container basic">
     <p id="personal" class="visible">Customer Profile: $title $first_name $last_name, DOB: $dob ($age_in_years years old)
       </p>
@@ -28,9 +28,9 @@
     </div>
   
 
-  <div>
-    <button class="copy-button" onclick="copyVisibleText()">Copy to clipboard</button>
-    <p class="copy-feedback" id="copyFeedback">Text copied!</p>
+  <div class="copy">
+    <button class="copy__button" onclick="copyFreeText()">Copy to clipboard</button>
+    <div class="copy__confirmation-message">Text copied!</div>
   </div>
   <script src="script.js"></script>
 
